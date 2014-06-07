@@ -1,0 +1,592 @@
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	
+	Eric Meyer					:: http://ericmeyer.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+	
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}									
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites, like, say for Google Maps custom placemarkers. 
+   There has been a report of problems with standard Google maps as well, but we haven't been able to duplicate or diagnose the issue. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted. 
+	don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+ 
+/* Accessible focus treatment
+	people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {outline: none;}
+
+small {font-size: 85%;}
+
+strong, th {font-weight: bold;}
+
+td, td img {vertical-align: top;} 
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+
+
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'GarogierRegular';
+    src: url('../assets/Garogier_unhinted-webfont.eot');
+    src: url('../assets/Garogier_unhinted-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/Garogier_unhinted-webfont.woff') format('woff'),
+         url('../assets/Garogier_unhinted-webfont.ttf') format('truetype'),
+         url('../assets/Garogier_unhinted-webfont.svg#GarogierRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
+body {
+	font: 13px Helmet, Freesans, sans-serif;
+}
+
+/* using local fonts? make sure to read up on Paul Irish's 
+	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+
+/* we like off-black for text */
+body, select, input, textarea {
+	color: #333;
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/*--------------  wrapper  ---------------------------------*/
+.wrapper_all {
+	width:804px;
+	margin:0 auto;
+}
+.share {
+	float:right;
+	padding:0 10px 0 0;
+}
+/*--------------  header  ---------------------------------*/
+header {
+	background: url(../img/me.gif) no-repeat scroll 500px 0 transparent; 
+	width:100%;
+	margin:0 20px 500px 20px;
+}
+header a {
+	text-decoration:none;
+}
+header h1 {
+	margin:250px 0 0 0;
+	font-size:3.5em;
+	color:#666;
+	text-shadow: -1px -2px 1px #000;
+	
+}
+
+/*--------------  nav  ---------------------------------*/
+header nav {
+	margin:20px 48px;
+}
+header nav ol {
+	list-style-type: upper-roman;
+}
+header nav a {
+	margin:24px;
+	font-size:1.5em;
+	color:#999;	
+}
+header nav a.alt {
+	color:tan;
+	padding:8px 0;
+}
+header nav a.alt:hover {
+	text-decoration:underline;
+}
+
+/*--------------  article  ---------------------------------*/
+article {	
+	margin:0 0 50px 0;
+}
+
+article hgroup {
+	float:left;
+	width:804px;
+	height:280px;
+	margin:50px 0 70px 0;
+}
+
+article h1 {
+	width:540px;
+	height:100%;
+	padding:0;
+	text-indent:-400%;
+
+/*	
+	border-bottom:10px solid #999;
+	text-shadow: -2px 2px 3px #999;
+	
+	-webkit-border-radius: 0 0 30px 30px;
+	-moz-border-radius: 0 0 30px 30px;
+	-o-border-radius: 0 0 30px 30px;
+	border-radius: 0 0 50px 50px;
+	
+	-webkit-transform: skew(-30deg,-10deg);
+	-moz-transform: skew(-30deg,-10deg);
+	-o-transform: skew(-30deg,-10deg);
+
+	font-size:3em;
+*/	
+}
+article h1#artist {
+	background: url(../img/artist.gif) no-repeat scroll 10px 60px transparent; 
+}
+article h1#developer {
+	background: url(../img/developer.gif) no-repeat scroll 10px 45px transparent; 
+}
+article h1#entrepreneur {
+	background: url(../img/entrepreneur.gif) no-repeat scroll 10px 90px transparent; 
+}
+article h1#manager {
+	background: url(../img/manager.gif) no-repeat scroll 10px 70px transparent; 
+}
+article h1#writer {
+	background: url(../img/writer.gif) no-repeat scroll 10px 35px transparent; 
+}
+article h1#adventurer {
+	background: url(../img/adventurer.gif) no-repeat scroll 5px 80px transparent; 
+}
+article h1#academic {
+	background: url(../img/academic.gif) no-repeat scroll 10px 50px transparent; 
+}
+article figure {
+	float:right;
+	width:220px;
+	height:273px;
+	text-indent:-400%;
+
+	margin:-225px 0 0 0;
+
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+/*	
+	-webkit-border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-o-border-radius: 20px 20px 20px 20px;
+	border-radius: 20px 20px 20px 20px;
+
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+	-o-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+	box-shadow: 0 1px 4px rgba(0,0,0,.3);
+*/
+}
+article figure.artist {
+	background: url(../img/the_artist.gif) no-repeat scroll -25px -30px transparent; 
+}
+article figure.developer {
+	background: url(../img/the_developer.gif) no-repeat scroll 0 0 transparent; 
+	width:250px;
+}
+article figure.entrepreneur {
+	background: url(../img/the_entrepreneur.gif) no-repeat scroll 0 0 transparent; 
+}
+article figure.manager {
+	background: url(../img/the_manager.gif) no-repeat scroll 0 0 transparent; 
+}
+article figure.writer {
+	background: url(../img/the_writer.gif) no-repeat scroll 0 0 transparent; 
+}
+article figure.adventurer {
+	background: url(../img/the_adventurer.gif) no-repeat scroll 0 0 transparent; 
+}
+article figure.academic {
+	background: url(../img/the_academic.gif) no-repeat scroll 0 0 transparent; 
+}
+section {
+	float:left;
+	width:252px;
+	margin:20px 24px 0 0;	
+}
+section.tertiary {
+	margin:20px 0 0 0;
+}
+section h2 {
+	margin:10px 0;
+	font-size:2em;
+	text-align:center;
+}
+section.primary h2 {
+	color:#a44;
+}
+section.secondary h2 {
+	color:#795;
+}
+section.tertiary h2 {
+	color:#568;
+}
+section p {
+/*	background: url(../img/rabbit.png) no-repeat scroll 70px 120px transparent; */
+	font-family:"GarogierRegular",times, serif;
+	font-size:1.3em;
+	line-height:1.4em;
+	letter-spacing:.02em;
+	height:200px;
+}
+section p:first-letter {
+	font-size:4.4em;
+	line-height:.6em;
+	float:left;
+	padding-right:3px;
+	
+}
+section img {
+	width:100px;
+	height:100px;
+	padding:0 76px;
+}
+article footer {
+	border-bottom:1px solid red; 
+	width:100%;
+	font-size:1em;
+	margin:50px 5px;
+	padding:0 0 7px 0;
+}
+article footer a {
+	float:left;
+	padding:7px;
+	text-decoration:none;
+	color:#999;
+}
+/*--------------  aside  ---------------------------------*/
+aside {
+	background: url(../img/like.gif) no-repeat scroll 240px 405px transparent; 
+	width:100%;
+	float:left;
+	margin:70px 0;
+	font-size:1.5em;
+	padding:110px 20px 254px 0;
+	text-align:center;
+}
+aside a {
+	text-align:center;
+	width:100%;
+	padding:20px;
+	text-decoration:none;
+	color:#999;
+}
+aside h2 {
+	margin:40px 0 0 0;
+	text-align:left;
+}
+aside figure {
+	float:left;
+	width:252px;
+}
+aside figcaption {
+	font-size:.5em;
+	
+	text-align:center;
+}
+aside video {
+	margin:20px 0 0 0;
+	
+	-webkit-border-radius: 30px 10px 30px 0;
+	-moz-border-radius: 30px 10px 30px 0;
+	-o-border-radius: 30px 10px 30px 0;
+	border-radius: 30px 10px 30px 0;
+
+	border: 1px solid #fff;
+	
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.3), -5px 2px 3px 3px rgba(196,200,180,.3);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.3), -5px 2px 3px 3px rgba(196,200,180,.3);
+	-o-box-shadow: 0 1px 4px rgba(0,0,0,.3), -5px 2px 3px 3px rgba(196,200,180,.3);
+	box-shadow: 0 1px 4px rgba(0,0,0,.3), -5px 2px 3px 3px rgba(196,200,180,.3);
+		
+}
+aside blockquote {
+	width:500px;
+	float:left;
+	padding:70px 0 0 4px;
+	text-align:center;
+	margin:0;
+}
+aside blockquote span{
+	font-size:.8em;
+	font-family:"GarogierRegular",times, serif;
+}
+
+/*--------------  footer  ---------------------------------*/
+footer {
+	float:left;
+	width:100%;
+	text-align:right;
+}
+footer h1 {
+	float:left;
+	font-family:"GarogierRegular",times, serif;
+	font-size:2em;
+}
+footer p {
+	padding:3% 10%;
+}
+
+
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+/*
+@media screen and (max-device-width: 480px) {
+	
+		
+}
+
+@media all and (orientation: portrait) {
+	
+}
+
+@media all and (orientation: landscape) {
+	
+}
+*/
+@media (min-width: 480px) and (max-width: 767px) {
+	
+	body {
+		margin:0 5px;
+		padding:0;
+	}
+	.wrapper_all {
+		width:528px;
+		margin:0 5px;
+	}
+	header {
+		background: url(../img/me.gif) no-repeat scroll 225px 80px transparent; 
+		width:100%;
+		margin:-75px 20px 50px 20px;
+	}
+	header nav li {
+		padding: 5px 0;
+	}
+	article h1 {
+		width:538px;
+		margin:0 0 0 -12px;
+	}
+	article figure {
+		float:left;
+		text-indent:-400%;
+/*	
+		width:220px;
+		height:273px;
+*/	
+
+		margin:80px 0 0 276px;
+
+	}
+	section {
+		float:left;
+		width:250px;
+		margin:20px 18px 0 0;	
+}
+	aside {
+		background: url(../img/like.gif) no-repeat scroll 75px 638px transparent; 
+	}
+}
+@media only screen and (max-device-width: 480px) {
+
+	body {
+		margin:0;
+		padding:0;
+	}
+
+	.wrapper_all {
+		width:252px;
+	}
+	header {
+		background: url(../img/me.gif) no-repeat scroll 30px 0 transparent; 
+		width:100%;
+		margin:0 20px 50px 20px;
+	}
+	article {
+		
+	}
+	article hgroup {
+		width:252px;
+	}
+	article figure {
+		margin:-100px 0 0 0;
+		float:left;
+	}
+	header nav {
+		margin:30px 20px;
+	}
+	header nav li {
+		padding: 5px 0;
+	}
+	section.primary {
+		margin:170px 0 0 0;
+	}
+	article h1#artist {
+		background: url(../img/artist-small.gif) no-repeat scroll 10px 60px transparent; 
+	}
+	article h1#developer {
+		background: url(../img/developer-small.gif) no-repeat scroll 10px 45px transparent; 
+	}
+	article h1#entrepreneur {
+	background: url(../img/entrepreneur-small.gif) no-repeat scroll 10px 90px transparent; 
+	}
+	article h1#manager {
+		background: url(../img/manager-small.gif) no-repeat scroll 10px 70px transparent; 
+	}
+	article h1#writer {
+		background: url(../img/writer-small.gif) no-repeat scroll 10px 35px transparent; 
+	}
+	article h1#adventurer {
+		background: url(../img/adventurer-small.gif) no-repeat scroll 5px 80px transparent; 
+	}
+	article h1#academic {
+		background: url(../img/academic-small.gif) no-repeat scroll 10px 50px transparent; 
+	}
+	article footer {
+		font-size:.5em;
+		margin:20px 5px;
+		padding:0 0 30px 0;
+	}
+	article footer a.top {
+		background: url(../img/top.gif) no-repeat scroll 3px 8px transparent; 
+		text-indent:-9999px;
+		margin:5px 0 0 0;
+		padding:18px;
+		border: 1px solid #69f;
+	}
+	article footer a {
+		float:left;
+		padding:5px;
+		text-decoration:none;
+		color:#999;
+	}
+	aside {
+		background: url(../img/like-small.gif) no-repeat scroll 20px 740px transparent; 
+	}	
+	aside blockquote {
+		width:240px;
+	}
+	footer {
+		text-align:center;
+	}
+	footer h1 {
+		font-size:1.5em;
+	}
+}

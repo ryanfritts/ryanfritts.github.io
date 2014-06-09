@@ -122,6 +122,7 @@ button {width: auto; overflow: visible;}
 
 /* Ok, this is where the fun starts.
 -------------------------------------------------------------------------------*/
+/*
 @font-face {
     font-family: 'GarogierRegular';
     src: url('../assets/Garogier_unhinted-webfont.eot');
@@ -133,6 +134,7 @@ button {width: auto; overflow: visible;}
     font-style: normal;
 
 }
+*/
 /* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
 body {
 	font: 13px Helmet, Freesans, sans-serif;

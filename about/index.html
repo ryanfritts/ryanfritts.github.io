@@ -1,0 +1,48 @@
+---
+layout: page
+title: about
+---
+
+{% for post in site.posts %}
+  {% if post.categories contains 'about' %}
+
+<article class="article">
+    
+    <hgroup class="content__header">
+		<h1 id="{{post.title | downcase}}" class="header__title--{{post.title | downcase}}">the artist</h1>
+		<figure class="figure--{{post.title | downcase}}">cast of characters: {{page.title | downcase}}</figure>
+    </hgroup>
+		
+    {{ post.content }}
+  
+    <footer class="article__footer">
+        <nav class="nav--footer">
+            <a class="__top__" href="#top">who is</a>
+            <a class="nav__link--footer" href="#artist">the artist</a>
+            <a class="nav__link--footer" href="#developer">the developer</a>
+            <a class="nav__link--footer" href="#entrepreneur">the entrepreneur</a>
+            <a class="nav__link--footer" href="#manager">the manager</a>
+            <a class="nav__link--footer" href="#writer">the writer</a>
+            <a class="nav__link--footer" href="#adventurer">the adventurer</a>
+            <a class="nav__link--footer" href="#academic">the academic</a>
+            <a class="nav__link--footer" href="#praise" class="alt">praise for rf</a>
+            <a class="nav__link--footer" href="#hireme" class="alt">hire me</a>
+        </nav>
+        
+    </footer>
+</article>
+
+<!--
+    <div class="post">
+        <header class="hero">
+            <h1 class="section">{{post.title}}</h1>
+            <img src="../img/type/{{post.title}}.png"/>
+        </header>
+        
+        <section>
+            {{ post.content }}
+        </section>
+    </div>
+-->
+  {% endif %}
+{% endfor %}

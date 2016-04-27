@@ -1,0 +1,24 @@
+{
+  "name": "rf",
+  "version": "0.0.1",
+  "description": "about rf",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Fritts",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^1.3.7",
+    "event-stream": "^3.3.2",
+    "gulp": "^3.8.8",
+    "gulp-autoprefixer": "1.0.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-html": "^0.4.4",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-htmltidy": "^0.2.2",
+    "gulp-inject": "^3.0.0",
+    "gulp-sass": "^2.1.0",
+    "media-query-extractor": "^0.1.1"
+  }
+}

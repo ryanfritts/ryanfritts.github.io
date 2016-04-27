@@ -1,0 +1,15 @@
+<article>
+		<hgroup>
+		<h1 id="{{ char.id }}">{{ char.name }}</h1>
+		<figure class="{{ char.class }}">cast of characters: {{ char.class }}</figure>
+		</hgroup>
+		
+		{% for fact in char.facts %}
+        <section class="{{ fact.class }}">
+		<h2>{{ fact.title }}</h2>
+		<p>{{ fact.description }}</p>
+		</section>
+        {% endfor %}
+		
+		{% include nav.html %}
+	</article>

@@ -1,0 +1,13 @@
+{% include head.html %}
+
+<body id="top">
+
+<div class="wrapper_all" >
+
+{% include header.html %}
+
+{% for char in site.data.characters %}
+  {% include article.html %}
+{% endfor %}
+
+{% include foot.html %}

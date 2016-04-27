@@ -1,11 +1,12 @@
-#  Ryan Fritts (.com) 
+blog
+====
 
-## Welcome:
+# hi
 
-This is the personal site and source of ryanfritts
-code is open source and free to use, however all images/graphics and content remain copyright of Ryan Fritts.
+## License
+The following directories and their contents are Copyright Ryan Fritts. You may not reuse anything therein without my permission:
 
+_posts/
+images/
 
-Respectfully,
-Ryan Fritts
-
+All other directories and files are MIT Licensed. 

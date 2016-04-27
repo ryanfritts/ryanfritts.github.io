@@ -1,0 +1,156 @@
+[
+    {
+        "id": "artist",
+        "class": "artist",
+        "name": "the artist",
+        "facts":[ 
+            {
+            "class": "primary",
+            "title": "user experience",
+            "description": "User journeys and task flows are not like ponchos (one-size fits all). I first understand the root problem; then posit how hiring our application might achieve their true goal. Harnessing their hypothesized behaviors to seek best fit."
+            },
+            {
+            "class": "secondary",
+            "title": "user interface",
+            "description": "The concert of user and machine takes place here. It is the collision of intention and intuition. Like the perfect dinner guest, an application must conduct just enough personality; brand. Conversation balancing wit and mystery, with the fondness of an old friend."
+            },
+            {
+            "class": "tertiary",
+            "title": "interaction",
+            "description": "My aim should be to guide users like a great mystic. Being careful not to instruct - but join them on their journey. Each interaction—an unraveling of the story. Constructing feedback as tiny conversation that show users right and wrong."
+            }
+        ]
+    },
+    {
+        "id": "developer",
+        "class": "developer",
+        "name": "the developer",
+        "facts":[ 
+            {
+            "class": "primary",
+            "title": "pixel perfect",
+            "description": "adf"
+            },
+            {
+            "class": "secondary",
+            "title": "components",
+            "description": "asdf"
+            },
+            {
+            "class": "tertiary",
+            "title": "living styleguide",
+            "description": "asdf"
+            }
+        ]
+    },
+    {
+        "id": "entrepreneur",
+        "class": "entrepreneur",
+        "name": "the entrepreneur",
+        "facts":[ 
+            {
+            "class": "primary",
+            "title": "starting",
+            "description": "I first started a commercial cleaning company. It was a great MBA program. I learned the basics of running a business. I had a wonderful time designing the website and marketing collateral, branding the company, and creating a strategic marketing plan. This lead to my next endeavor: a creative consulting firm."
+            },
+            {
+            "class": "secondary",
+            "title": "building",
+            "description": "I worked as Managing Director for a non-profit theatre company, where we renovated and re-opened TGA, a defunct church, and built it into a new community arts and education center for South STL. I coordinated events, booked talent, and facilitated the day-to-day."
+            },
+            {
+            "class": "tertiary",
+            "title": "consulting",
+            "description": "Throughout my freelance career, I have had the pleasure of working with new business owners and advising them on promotions, corporate identity, and general business guidance. I thrive in this unstructured, chaotic environments. I am calm, candid, and decisive."
+            }
+        ]
+    },
+    {
+        "id": "manager",
+        "class": "manager",
+        "name": "the manager",
+        "facts":[ 
+            {
+            "class": "primary",
+            "title": "talent",
+            "description": "People need to spend their time doing what they do best. As the often cited quote goes 'No one ever told the world class violinist that they were bad at golf'. I find out where my people excel, and I put them to it. It's not a matter of if they do or don't want to do it… it's simply, who is the best person for the task."
+            },
+            {
+            "class": "secondary",
+            "title": "resource",
+            "description": "I set my team up for success. My main duty is to provide them with the tools they need to do the job quickly and effectively. Then, I to get out of their way. I am their steward. I run interference for them, and I knock down potential roadblocks. I make sure they are focused on what counts."
+            },
+            {
+            "class": "tertiary",
+            "title": "leadership",
+            "description": "I have exceptionally high standards for myself; thus, I have high standards for my team. Excellence is the watchword, not perfection. I am the paradigm for my people. I lead by example. I also, make mistakes... I accept them, learn from them, and move on - Making a deliberate effort for improvement."
+            }
+        ]
+    },
+    {
+        "id": "writer",
+        "class": "writer",
+        "name": "the writer",
+        "facts":[ 
+            {
+            "class": "primary",
+            "title": "content strategy",
+            "description": "adf"
+            },
+            {
+            "class": "secondary",
+            "title": "microcopy",
+            "description": "Powerful copy is more than just a catchy saying. Each word evokes it's own emotion. Each letter it's own percussion. They can be woven into a rhythmic beautiful tapestry. Your voice is what defines you. It is your singularity."
+            },
+            {
+            "class": "tertiary",
+            "title": "social beasts",
+            "description": "asdf"
+            }
+        ]
+    },
+    {
+        "id": "adventurer",
+        "class": "adventurer",
+        "name": "the adventurer",
+        "facts":[ 
+            {
+            "class": "primary",
+            "title": "backpacking",
+            "description": "Preparation is key in exploration. Expect the best, but plan for the worst. I go into the woods 'because I [wish] to live deliberately'... to learn and live. A retreat from the exacerbated pace of the world. A calming of my thoughts. A recharging of my spirit."
+            },
+            {
+            "class": "secondary",
+            "title": "micro-adventures",
+            "description": "My wife and I set out each month on mini-adventures. We become tourists in our own town. We experience the world fresh and try new things. Museums, food fairs, and walks in the park. Each tiny feat, a step towards enjoyment and fulfillment."
+            },
+            {
+            "class": "tertiary",
+            "title": "macro : life",
+            "description": "The biggest adventure of all. Each day, I start anew. I accept and learn from old failures; I seek out and take on new challenges; and I strive to reach and exceed my goals. Living life on purpose.  Becoming my authentic self."
+            }
+        ]
+    },
+    {
+        "id": "academic",
+        "class": "academic",
+        "name": "the academic",
+        "facts":[ 
+            {
+            "class": "primary",
+            "title": "university",
+            "description": "I finished out my school learning with a dual of majors. In Communication, I learned to clearly convey a message. I began to observe and understand. In Philosophy, I learned to think and reason. I began to question and grow."
+            },
+            {
+            "class": "secondary",
+            "title": "certification",
+            "description": "As I became more ensconced in technology, I rediscovered my passion for puzzles and patterns and math. Thusly, I returned to learning all things numbers, and obtained my teaching certificate for Mathematics."
+            },
+            {
+            "class": "tertiary",
+            "title": "continued edu",
+            "description": "Growing up with computers coupled with my natural desire to solve problems, I have immersed myself fully in programming and conversing with computers. With the help of many Online guides, I continue to teach myself and keep up to date on trends in technology."
+            }
+        ]
+    }
+]

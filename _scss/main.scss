@@ -317,9 +317,10 @@ section.tertiary {
 	margin:20px 0 0 0;
 }
 section h2 {
-	margin:10px 0;
+	margin:.75em 0;
 	font-size:2em;
-	text-align:center;
+	font-variant: small-caps;
+	border-bottom: 1px solid; 
 }
 section.primary h2 {
 	color:#a44;
@@ -351,7 +352,7 @@ section img {
 	padding:0 76px;
 }
 article footer {
-	border-bottom:1px solid red; 
+	border-bottom:1px solid #e7e7e7; 
 	width:100%;
 	font-size:1em;
 	margin:50px 5px;
@@ -359,7 +360,7 @@ article footer {
 }
 article footer a {
 	float:left;
-	padding:7px;
+	padding:1.2em;
 	text-decoration:none;
 	color:#999;
 }
@@ -436,7 +437,9 @@ footer p {
 	padding:3% 10%;
 }
 
-
+.footer {
+	text-align: center;
+}
 
 /* Print styles!
 -------------------------------------------------------------------------------*/
@@ -506,7 +509,7 @@ footer p {
 		background: url(../img/like.gif) no-repeat scroll 75px 638px transparent; 
 	}
 }
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
 
 	body {
 		margin:0;
@@ -521,9 +524,7 @@ footer p {
 		width:100%;
 		margin:0 20px 50px 20px;
 	}
-	article {
-		
-	}
+	
 	article hgroup {
 		width:252px;
 	}

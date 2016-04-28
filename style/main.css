@@ -390,9 +390,10 @@ section.tertiary {
   margin: 20px 0 0 0; }
 
 section h2 {
-  margin: 10px 0;
+  margin: .75em 0;
   font-size: 2em;
-  text-align: center; }
+  font-variant: small-caps;
+  border-bottom: 1px solid; }
 
 section.primary h2 {
   color: #a44; }
@@ -423,7 +424,7 @@ section img {
   padding: 0 76px; }
 
 article footer {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #e7e7e7;
   width: 100%;
   font-size: 1em;
   margin: 50px 5px;
@@ -431,7 +432,7 @@ article footer {
 
 article footer a {
   float: left;
-  padding: 7px;
+  padding: 1.2em;
   text-decoration: none;
   color: #999; }
 

@@ -7,7 +7,7 @@
             {
             "class": "primary",
             "title": "user experience",
-            "description": "User journeys and task flows are not like ponchos (one-size fits all). I first understand the root problem; then posit how hiring our application might achieve their true goal. Harnessing their hypothesized behaviors to seek best fit."
+            "description": "User journeys and task flows are not like ponchos (one-size fits all). I first understand the root problem; then posit how hiring our application might achieve the user's true goal. Harnessing their hypothesized behaviors to seek best fit. "
             },
             {
             "class": "secondary",
@@ -17,7 +17,7 @@
             {
             "class": "tertiary",
             "title": "interaction",
-            "description": "My aim should be to guide users like a great mystic. Being careful not to instruct - but join them on their journey. Each interaction—an unraveling of the story. Constructing feedback as tiny conversation that show users right and wrong."
+            "description": "My aim is to guide users like a great mystic. Being careful not to instruct - but join them on their journey. Each interaction—an unraveling of the story. Constructing feedback as tiny conversations that show users right and wrong."
             }
         ]
     },
@@ -29,17 +29,17 @@
             {
             "class": "primary",
             "title": "pixel perfect",
-            "description": "adf"
+            "description": "The virtual world is a fragmented, abundant garden. Attention must be given to that which is beneath the soil. Bad sub-pixel rendering can make a healthy glyph wither and die. From the seeds of an idea, I cultivate these graphics to make them shine. "
             },
             {
             "class": "secondary",
             "title": "components",
-            "description": "asdf"
+            "description": "With the ever changing device landscape we can no longer design screens or pages. We must talk in terms of components and component states. I build them to live anywhere in the application for use as blocks to composite the whole view."
             },
             {
             "class": "tertiary",
             "title": "living styleguide",
-            "description": "asdf"
+            "description": "A moving target that evolves in lock step with your organization. Styleguide driven development is the frugal centerpiece on which coherent communication can take place between designers, developers, and their constituencies alike. "
             }
         ]
     },
@@ -95,7 +95,7 @@
             {
             "class": "primary",
             "title": "content strategy",
-            "description": "adf"
+            "description": "The web is no longer a simple html table on a webpage. It is series of endpoints that end up on your phone, car, TV, or even refrigerator. I provide definition and structure to channel these extensible, reusable chunks thru the inter-web piping. "
             },
             {
             "class": "secondary",
@@ -105,29 +105,7 @@
             {
             "class": "tertiary",
             "title": "social beasts",
-            "description": "asdf"
-            }
-        ]
-    },
-    {
-        "id": "adventurer",
-        "class": "adventurer",
-        "name": "the adventurer",
-        "facts":[ 
-            {
-            "class": "primary",
-            "title": "backpacking",
-            "description": "Preparation is key in exploration. Expect the best, but plan for the worst. I go into the woods 'because I [wish] to live deliberately'... to learn and live. A retreat from the exacerbated pace of the world. A calming of my thoughts. A recharging of my spirit."
-            },
-            {
-            "class": "secondary",
-            "title": "micro-adventures",
-            "description": "My wife and I set out each month on mini-adventures. We become tourists in our own town. We experience the world fresh and try new things. Museums, food fairs, and walks in the park. Each tiny feat, a step towards enjoyment and fulfillment."
-            },
-            {
-            "class": "tertiary",
-            "title": "macro : life",
-            "description": "The biggest adventure of all. Each day, I start anew. I accept and learn from old failures; I seek out and take on new challenges; and I strive to reach and exceed my goals. Living life on purpose.  Becoming my authentic self."
+            "description": "New age poems and prose. Social networks have broken the barriers wide open. 'Companies' have struggled to keep up. People seek what they are and aspire to be. I bridge the gap, and bring the personality behind the company to the forefront."
             }
         ]
     },
@@ -150,6 +128,28 @@
             "class": "tertiary",
             "title": "continued edu",
             "description": "Growing up with computers coupled with my natural desire to solve problems, I have immersed myself fully in programming and conversing with computers. With the help of many Online guides, I continue to teach myself and keep up to date on trends in technology."
+            }
+        ]
+    },
+    {
+        "id": "adventurer",
+        "class": "adventurer",
+        "name": "the adventurer",
+        "facts":[ 
+            {
+            "class": "primary",
+            "title": "backpacking",
+            "description": "Preparation is key in exploration. Expect the best, but plan for the worst. I go into the woods 'because I [wish] to live deliberately'... to learn and live. A retreat from the exacerbated pace of the world. A calming of my thoughts. A recharging of my spirit."
+            },
+            {
+            "class": "secondary",
+            "title": "micro-adventures",
+            "description": "My wife and I set out each month on mini-adventures. We become tourists in our own town. We experience the world fresh and try new things. Museums, food fairs, and walks in the park. Each tiny feat, a step towards enjoyment and fulfillment."
+            },
+            {
+            "class": "tertiary",
+            "title": "macro : life",
+            "description": "The biggest adventure of all. Each day, I start anew. I accept and learn from old failures; I seek out and take on new challenges; and I strive to reach and exceed my goals. Living life on purpose.  Becoming my authentic self."
             }
         ]
     }

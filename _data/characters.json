@@ -1,8 +1,8 @@
 [
     {
-        "id": "artist",
-        "class": "artist",
-        "name": "the artist",
+        "id": "designer",
+        "class": "designer",
+        "name": "the designer",
         "facts":[ 
             {
             "class": "primary",

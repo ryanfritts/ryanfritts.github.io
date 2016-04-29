@@ -318,25 +318,28 @@ article h1 {
 */ }
 
 article h1#artist {
-  background: url(../assets/img/artist.gif) no-repeat scroll 10px 60px transparent; }
+  background: url(../img/artist.gif) no-repeat scroll 10px 60px transparent; }
+
+article h1#designer {
+  background: url(../img/designer.png) no-repeat scroll 10px 60px transparent; }
 
 article h1#developer {
-  background: url(../assets/img/developer.gif) no-repeat scroll 10px 45px transparent; }
+  background: url(../img/developer.gif) no-repeat scroll 10px 45px transparent; }
 
 article h1#entrepreneur {
-  background: url(../assets/img/entrepreneur.gif) no-repeat scroll 10px 90px transparent; }
+  background: url(../img/entrepreneur.gif) no-repeat scroll 10px 90px transparent; }
 
 article h1#manager {
-  background: url(../assets/img/manager.gif) no-repeat scroll 10px 70px transparent; }
+  background: url(../img/manager.gif) no-repeat scroll 10px 70px transparent; }
 
 article h1#writer {
-  background: url(../assets/img/writer.gif) no-repeat scroll 10px 35px transparent; }
+  background: url(../img/writer.gif) no-repeat scroll 10px 35px transparent; }
 
 article h1#adventurer {
-  background: url(../assets/img/adventurer.gif) no-repeat scroll 5px 80px transparent; }
+  background: url(../img/adventurer.gif) no-repeat scroll 5px 80px transparent; }
 
 article h1#academic {
-  background: url(../assets/img/academic.gif) no-repeat scroll 10px 50px transparent; }
+  background: url(../img/academic.gif) no-repeat scroll 10px 50px transparent; }
 
 article figure {
   float: right;
@@ -360,26 +363,29 @@ article figure {
 */ }
 
 article figure.artist {
-  background: url(../assets/img/the_artist.gif) no-repeat scroll -25px -30px transparent; }
+  background: url(../img/the_artist.gif) no-repeat scroll -25px -30px transparent; }
+
+article figure.designer {
+  background: url(../img/the_artist.gif) no-repeat scroll -25px -30px transparent; }
 
 article figure.developer {
-  background: url(../assets/img/the_developer.gif) no-repeat scroll 0 0 transparent;
+  background: url(../img/the_developer.gif) no-repeat scroll 0 0 transparent;
   width: 250px; }
 
 article figure.entrepreneur {
-  background: url(../assets/img/the_entrepreneur.gif) no-repeat scroll 0 0 transparent; }
+  background: url(../img/the_entrepreneur.gif) no-repeat scroll 0 0 transparent; }
 
 article figure.manager {
-  background: url(../assets/img/the_manager.gif) no-repeat scroll 0 0 transparent; }
+  background: url(../img/the_manager.gif) no-repeat scroll 0 0 transparent; }
 
 article figure.writer {
-  background: url(../assets/img/the_writer.gif) no-repeat scroll 0 0 transparent; }
+  background: url(../img/the_writer.gif) no-repeat scroll 0 0 transparent; }
 
 article figure.adventurer {
-  background: url(../assets/img/the_adventurer.gif) no-repeat scroll 0 0 transparent; }
+  background: url(../img/the_adventurer.gif) no-repeat scroll 0 0 transparent; }
 
 article figure.academic {
-  background: url(../assets/img/the_academic.gif) no-repeat scroll 0 0 transparent; }
+  background: url(../img/the_academic.gif) no-repeat scroll 0 0 transparent; }
 
 section {
   float: left;
@@ -432,7 +438,7 @@ article footer {
 
 article footer a {
   float: left;
-  padding: 1.2em;
+  padding: 1.121em;
   text-decoration: none;
   color: #999; }
 
@@ -491,12 +497,14 @@ footer {
   text-align: right; }
 
 footer h1 {
-  float: left;
   font-family: "GarogierRegular",times, serif;
   font-size: 2em; }
 
 footer p {
   padding: 3% 10%; }
+
+.footer {
+  text-align: center; }
 
 /* Print styles!
 -------------------------------------------------------------------------------*/
@@ -547,7 +555,7 @@ footer p {
   aside {
     background: url(../img/like.gif) no-repeat scroll 75px 638px transparent; } }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
   body {
     margin: 0;
     padding: 0; }
@@ -570,6 +578,8 @@ footer p {
     margin: 170px 0 0 0; }
   article h1#artist {
     background: url(../img/artist-small.gif) no-repeat scroll 10px 60px transparent; }
+  article h1#designer {
+    background: url(../img/designer-small.png) no-repeat scroll 10px 60px transparent; }
   article h1#developer {
     background: url(../img/developer-small.gif) no-repeat scroll 10px 45px transparent; }
   article h1#entrepreneur {

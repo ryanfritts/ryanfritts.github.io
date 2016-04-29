@@ -15,7 +15,7 @@ All other directories and files are MIT Licensed.
 - [x] Add gulp
 - [x] update jekyll/liquid templates
 - [x] pull json data
-- [x] Add sass~ / kind of
+- [x] Add sass / kind of
 - [ ] reorganize scss
     - [ ] new class names
     - [ ] update media queries... desktop first is so late aughts

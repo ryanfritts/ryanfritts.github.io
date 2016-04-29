@@ -13,7 +13,6 @@ All other directories and files are MIT Licensed.
 - [x] update jekyll/liquid templates
 - [x] pull json data
 - [x] Add sass / kind of
-- [ ] fix spelling of 'designer'
 - [ ] reorganize scss
     - [ ] new class names
     - [ ] update media queries... desktop first is so late aughts

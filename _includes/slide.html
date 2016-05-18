@@ -1,0 +1,4 @@
+     
+{% if proj contains 'nested' %}
+    <section>{% for proj in proj.nested %}{% include section.html %}{% endfor %}</section>
+{% else %}{% include section.html %}{% endif %}

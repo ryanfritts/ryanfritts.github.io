@@ -1,0 +1,113 @@
+[
+    {
+        "markdown": "
+  ## Markdown support
+  
+  Write content using inline or external Markdown.
+  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).",
+        "transition":  "Concave" 
+    },
+    {
+        "transition":  "Fade", 
+        "header": "here is the title",
+        "para":[
+            {
+            "text": "here is some text",
+            "class": "fragment fade-up"
+            },
+            {
+            "text": "here is some more text",
+            "class": "fragment fade-down"
+            }
+        ]
+    },
+    {
+        "transition":  "Slide", 
+        "background": "#BADA55", 
+        "background-transition": "None",
+        "background-repeat": "repeat",
+        "header": "header three",
+        "para":[
+            {
+            "text": "text",
+            "span":[
+                 {
+                 "text": "one",
+                 "class": "fragment grow"              
+                 },
+                 {
+                 "text": "two",
+                 "class": "fragment grow"              
+                 },
+                 {
+                 "text": "three",
+                 "class": "fragment grow"              
+                 }
+              ]
+            }
+        ]
+    },
+    {
+        "nested":[ 
+            {
+                "markdown": 
+            "## Markdown support
+            
+            Write content using inline or external Markdown.
+            Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).",
+                "transition":  "Concave", 
+            },
+            {
+                "transition":  "Fade", 
+                "header": "here is the title",
+                "para":[
+                    {
+                    "text": "here is some text",
+                    "class": "fragment fade-up"
+                    },
+                    {
+                    "text": "here is some more text",
+                    "class": "fragment fade-down"
+                    }
+                ]
+            },
+            {
+                "transition":  "Slide", 
+                "background": "#BADA55", 
+                "background-transition": "None",
+                "background-repeat": "repeat",
+                "header": "header three",
+                "para":[
+                    {
+                    "text": "text",
+                    "class": "", 
+                    "span":[
+                        {
+                        "text": "one",
+                        "class": "fragment grow"              
+                        },
+                        {
+                        "text": "two",
+                        "class": "fragment grow"              
+                        },
+                        {
+                        "text": "three",
+                        "class": "fragment grow"              
+                        }
+                    ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "code": "
+html {
+    color: red;
+}
+.style-primary {
+    color: green;
+}
+"
+    }
+]

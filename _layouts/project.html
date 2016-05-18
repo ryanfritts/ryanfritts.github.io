@@ -1,0 +1,36 @@
+ {% include head.html %}
+ </head>
+	<body>    
+		
+{% assign project = site.data.projects[page.projectName] %}
+<div class="reveal">
+    <div class="slides">
+	{% for proj in project %}{% include slide.html %}{% endfor %}
+    </div>
+</div>
+
+    
+		<script src="../scripts/lib/js/head.min.js"></script>
+		<script src="../scripts/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', 
+
+			//	More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../scripts/plugin/markdown/marked.js' },
+					{ src: '../scripts/plugin/markdown/markdown.js' },
+					{ src: '../scripts/plugin/notes/notes.js', async: true },
+					{ src: '../scripts/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

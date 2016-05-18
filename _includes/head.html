@@ -16,20 +16,20 @@
 	
 	<title></title>
 	
-	<meta name="title" content="Who is Ryan Fritts?">
+	<meta name="title" content="{{ page.title }}">
 	<meta name="description" content="web designer, writer, advertiser, manager, teacher">
 	<!-- Google will often use this as its description of your page/site. Make it good. -->
 	
 	<meta name="google-site-verification" content="">
 	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
 	
-	<meta name="author" content="Ryan Fritts">
+	<meta name="author" content="{{ site.author }}">
 	<meta name="Copyright" content="Copyright Ryan Fritts llc 2011. All Rights Reserved.">
 
 	<!-- Dublin Core Metadata : http://dublincore.org/ -->
-	<meta name="DC.title" content="Who Is Ryan Fritts?">
+	<meta name="DC.title" content="{{ page.title }}">
 	<meta name="DC.subject" content="all things web... mostly design.">
-	<meta name="DC.creator" content="Ryan Fritts">
+	<meta name="DC.creator" content="{{ site.author }}">
 	
 	<!--  Mobile Viewport Fix
 	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
@@ -54,12 +54,19 @@
 		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
 	
 	<!-- CSS: screen, mobile & print are all in the same file -->
-	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="{{ page.style }}">
+	
+	<!-- Printing and PDF exports -->
+		<!--<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>-->
 	
 	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
 	<script src="scripts/modernizr-1.7.min.js"></script>
 
-</head>
-<body>
-<div class="site">
+
         

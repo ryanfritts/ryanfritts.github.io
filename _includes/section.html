@@ -1,0 +1,8 @@
+<section{% if proj contains 'transition' %} data-transition="{{ proj.transition }}"{% endif %}{% if proj contains 'background' %} data-background="{{ proj.background }}"{% endif %}{% if proj contains 'background-transition' %} data-background-transition="{{ proj.background-transition }}"{% endif %}{% if proj contains 'background-video' %} data-background-video="{{ proj.background-video }}"{% endif%}{% if proj contains 'background-repeat' %} data-background-repeat="{{ proj.background-repeat }}"{% endif%}{% if proj contains 'markdown' %} data-markdown{% endif%}>
+{% if proj contains 'markdown' %}{{ proj.markdown }}{% endif %}{% if proj contains 'header' %}<h2>{{ proj.header }}</h2>{% endif %}{% if proj contains 'para' %}{% for para in proj.para %}
+<p class="{{ para.class }}">{{ para.text }}</p>{% if para contains 'span' %}
+<p>{% for span in para.span %}<span class="{{ span.class }}">{{ span.text }}</span>{% endfor %}</p>{% endif %}{% endfor %}{% endif %}
+{% if proj contains 'code' %}<pre><code class="hljs" data-trim contenteditable>
+    {{ proj.code }}
+</code></pre>{% endif %}
+</section> 

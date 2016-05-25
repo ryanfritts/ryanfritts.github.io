@@ -290,15 +290,19 @@ header {
   header nav a.alt:hover {
     text-decoration: underline; }
   header .btn {
+    position: relative;
+    top: 0;
+    right: 0;
     display: block;
     color: #fff;
     border: 1px solid white;
-    padding: .5em;
-    float: right;
-    margin: -1em;
-    border-radius: .25em;
+    text-align: center;
     font-weight: 100;
-    transition: 0.15s ease-in; }
+    border-radius: .25em;
+    transition: 0.15s ease-in;
+    font-size: 1.25em;
+    padding: 1em;
+    margin: -1.5em 8em 0; }
   header .btn:hover {
     background: rgba(2, 60, 93, 0.5); }
   header.smaller {
@@ -317,7 +321,9 @@ header {
       position: absolute;
       top: 0;
       right: 0;
-      margin: 1em; }
+      margin: 1em;
+      padding: .5em;
+      font-size: 1em; }
 
 /*--------------  article  ---------------------------------*/
 article {

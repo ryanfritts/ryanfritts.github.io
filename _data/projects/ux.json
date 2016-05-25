@@ -1,11 +1,37 @@
 [
     {
-        "markdown": "
-  ## Markdown support
-  
-  Write content using inline or external Markdown.
-  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).",
-        "transition":  "Concave" 
+        "markdown": "## Designing for the experience",
+        "para":[
+            {
+                "text": "offline"
+            }
+        ],
+        "background": "rgba(12,143,181,1)"
+    },
+    {
+        "transition":  "Fade", 
+        "header": "define the problem and objective",
+        "para":[
+            {
+                "text": "a.k.a. Job Stories",
+                "class": "fragment fade-up"
+            },
+            {
+                "text": "a.k.a. Job-to-be-done",
+                "class": "fragment fade-up"
+            },
+            {
+                "text": "a.k.a. Milkshakes",
+                "class": "fragment fade-up"
+            }
+        ],
+        "background": "rgba(12,143,181,.37)"
+    },
+    {
+        "header": "<iframe width='438' height='930' src='//invis.io/Z24V79IAS' frameborder='0' allowfullscreen></iframe>",
+        "background": "#E6E7E8",
+        "background-transition": "slide",
+        "transition": "fade"
     },
     {
         "transition":  "Fade", 

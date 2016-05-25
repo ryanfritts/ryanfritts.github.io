@@ -254,52 +254,85 @@ mark {
 
 /*--------------  header  ---------------------------------*/
 header {
-  background: url(../img/me.gif) no-repeat scroll 500px 0 transparent;
   width: 100%;
-  margin: 0 20px 500px 20px; }
-
-header a {
-  text-decoration: none; }
-
-header h1 {
-  margin: 250px 0 0 0;
-  font-size: 3.5em;
-  color: #666;
-  text-shadow: -1px -2px 1px #000; }
-
-/*--------------  nav  ---------------------------------*/
-header nav {
-  margin: 20px 48px; }
-
-header nav ol {
-  list-style-type: upper-roman; }
-
-header nav a {
-  margin: 24px;
-  font-size: 1.5em;
-  color: #999; }
-
-header nav a.alt {
-  color: tan;
-  padding: 8px 0; }
-
-header nav a.alt:hover {
-  text-decoration: underline; }
+  height: 1750px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: 0.3s ease-in-out;
+  background: white; }
+  header a {
+    text-decoration: none; }
+  header h1 {
+    margin: 1em;
+    font-size: 3.5em;
+    color: #023C5D; }
+  header .hero {
+    background-color: #0683c9;
+    margin: 15em;
+    padding: 2em;
+    border-radius: 8px;
+    transition: margin 0.3s ease-in-out, padding 0.3s ease-in-out; }
+  header nav {
+    margin: 5em 15em; }
+  header nav ol {
+    list-style-type: upper-roman; }
+  header nav a {
+    font-size: 1.5em;
+    font-weight: 100;
+    line-height: 1.5;
+    color: #e7e7e7; }
+  header nav a.alt {
+    color: tan;
+    padding: 8px 0; }
+  header nav a.alt:hover {
+    text-decoration: underline; }
+  header .btn {
+    display: block;
+    color: #fff;
+    border: 1px solid white;
+    padding: .5em;
+    float: right;
+    margin: -1em;
+    border-radius: .25em;
+    font-weight: 100;
+    transition: 0.15s ease-in; }
+  header .btn:hover {
+    background: rgba(2, 60, 93, 0.5); }
+  header.smaller {
+    height: 55px;
+    margin: 0;
+    background: transparent; }
+    header.smaller .hero {
+      margin: 0;
+      padding: 0;
+      border-radius: 0; }
+    header.smaller h1 {
+      margin: 0;
+      padding: 0.5em;
+      font-size: 2em; }
+    header.smaller .btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 1em; }
 
 /*--------------  article  ---------------------------------*/
 article {
-  margin: 0 0 50px 0; }
+  margin: 0 0 15em 0; }
 
 article hgroup {
   float: left;
   width: 804px;
   height: 280px;
-  margin: 50px 0 70px 0; }
+  margin: 60px 0 70px 0; }
 
 article h1 {
   width: 540px;
   height: 100%;
-  padding: 0;
+  padding: 3.5em 0 0 0;
   text-indent: -400%;
   /*	
 	border-bottom:10px solid #999;

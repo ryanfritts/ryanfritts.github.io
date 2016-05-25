@@ -5,12 +5,12 @@
   
 <body id="top">
 
-<div class="wrapper_all" >
 
+<div>
 {% include header.html %}
-
+<div class="wrapper_all" >
 {% for char in site.data.characters %}
   {% include article.html %}
 {% endfor %}
-
+</div>
 {% include foot.html %}

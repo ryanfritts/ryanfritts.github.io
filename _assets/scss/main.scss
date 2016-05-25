@@ -211,6 +211,7 @@ header {
 		background-color: #0683c9;
 		margin: 15em;
 		padding: 2em;
+		max-width: 737px;
 		border-radius: 8px;
 		-webkit-transition: margin 0.3s ease-in-out, padding 0.3s ease-in-out;
 		-moz-transition: margin 0.3s ease-in-out, padding 0.3s ease-in-out;
@@ -266,6 +267,7 @@ header {
 			margin: 0;
 			padding: 0;
 			border-radius: 0;
+			max-width: 2000px;
 		}
 		h1 {
 			margin: 0;
@@ -550,13 +552,14 @@ footer p {
 	
 }
 */
-@media (min-width: 480px) and (max-width: 985px) {
+@media (min-width: 750px) and (max-width: 985px) {
 	header {
 		
 		.hero {
 			margin: 0;
 			padding: 2em 2em 25em;
 			border-radius: 0;
+			max-width: 1001px;
 		}
 		h1 {font-size: 2em;}
 		nav {
@@ -605,16 +608,7 @@ footer p {
 		background: url(../img/like.gif) no-repeat scroll 75px 638px transparent; 
 	}
 }
-@media only screen and (max-width: 480px) {
-
-	body {
-		margin:0;
-		padding:0;
-	}
-
-	.wrapper_all {
-		width:252px;
-	}
+@media (min-width: 0px) and (max-width: 767px) {
 	header {
 		
 		.hero {
@@ -625,11 +619,24 @@ footer p {
 		h1 {font-size: 2em;}
 		nav {
 			padding: 0 5em;
+			margin: 0;
 		}
 		.btn {
 			margin: 0;
 		}
 	}
+}
+@media only screen and (max-width: 480px) {
+
+	body {
+		margin:0;
+		padding:0;
+	}
+
+	.wrapper_all {
+		width:252px;
+	}
+	
 	
 	article hgroup {
 		width:252px;
@@ -638,9 +645,7 @@ footer p {
 		margin:-100px 0 0 0;
 		float:left;
 	}
-	header nav {
-		margin:30px 20px;
-	}
+	
 	header nav li {
 		padding: 5px 0;
 	}

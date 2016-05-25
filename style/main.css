@@ -563,6 +563,18 @@ footer p {
 	
 }
 */
+@media (min-width: 480px) and (max-width: 985px) {
+  header .hero {
+    margin: 0;
+    padding: 2em 2em 25em;
+    border-radius: 0; }
+  header h1 {
+    font-size: 2em; }
+  header nav {
+    padding: 0 5em; }
+  header .btn {
+    margin: 0; } }
+
 @media (min-width: 480px) and (max-width: 767px) {
   body {
     margin: 0 5px;
@@ -570,10 +582,6 @@ footer p {
   .wrapper_all {
     width: 528px;
     margin: 0 5px; }
-  header {
-    background: url(../img/me.gif) no-repeat scroll 225px 80px transparent;
-    width: 100%;
-    margin: -75px 20px 50px 20px; }
   header nav li {
     padding: 5px 0; }
   article h1 {
@@ -600,10 +608,16 @@ footer p {
     padding: 0; }
   .wrapper_all {
     width: 252px; }
-  header {
-    background: url(../img/me.gif) no-repeat scroll 30px 0 transparent;
-    width: 100%;
-    margin: 0 20px 50px 20px; }
+  header .hero {
+    margin: 0;
+    padding: 2em 2em 25em;
+    border-radius: 0; }
+  header h1 {
+    font-size: 2em; }
+  header nav {
+    padding: 0 5em; }
+  header .btn {
+    margin: 0; }
   article hgroup {
     width: 252px; }
   article figure {

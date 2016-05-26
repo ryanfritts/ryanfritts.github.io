@@ -211,7 +211,6 @@ header {
 		background-color: #0683c9;
 		margin: 15em;
 		padding: 2em;
-		max-width: 737px;
 		border-radius: 8px;
 		-webkit-transition: margin 0.3s ease-in-out, padding 0.3s ease-in-out;
 		-moz-transition: margin 0.3s ease-in-out, padding 0.3s ease-in-out;
@@ -223,7 +222,8 @@ header {
 		margin:5em 15em;
 	}
 	nav ol {
-		list-style-type: upper-roman;
+		list-style-type: disc;
+		
 	}
 	nav a {
 		font-size:1.5em;
@@ -552,6 +552,55 @@ footer p {
 	
 }
 */
+@media (min-width: 1425px) {
+	header {
+		.hero {
+			height: 450px;
+			max-width: 1135px;
+		}
+		nav {
+			// margin:5em 15em;
+			float: left;
+			margin: 2em 13em;
+		}
+		nav ol {
+			// list-style-type: disc;
+			
+		}
+		nav a {
+			// font-size:1.5em;
+			// font-weight: 100;
+			// line-height: 1.5;
+			// color:#e7e7e7;	
+		}
+		.btn {
+			// position: relative;
+			// top: 0;
+			// right: 0;
+			// display:block;
+			// color: #fff;
+			// border: 1px solid white;
+			// text-align: center;
+			// font-weight: 100;
+			// border-radius: .25em;
+			// transition: 0.15s ease-in;
+			
+			// font-size: 1.25em;
+			// padding: 1em;
+			// margin: -1.5em 8em 0;
+			float: left;
+			padding: 4em 2em;
+			margin: 1em 10em;	
+		}
+	}
+}
+@media (min-width: 1600px) {
+	header {
+		.hero {
+			margin: 15em auto;
+		}
+	}
+}
 @media (min-width: 750px) and (max-width: 985px) {
 	header {
 		

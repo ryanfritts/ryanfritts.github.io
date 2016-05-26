@@ -273,13 +273,12 @@ header {
     background-color: #0683c9;
     margin: 15em;
     padding: 2em;
-    max-width: 737px;
     border-radius: 8px;
     transition: margin 0.3s ease-in-out, padding 0.3s ease-in-out; }
   header nav {
     margin: 5em 15em; }
   header nav ol {
-    list-style-type: upper-roman; }
+    list-style-type: disc; }
   header nav a {
     font-size: 1.5em;
     font-weight: 100;
@@ -565,6 +564,22 @@ footer p {
 	
 }
 */
+@media (min-width: 1425px) {
+  header .hero {
+    height: 450px;
+    max-width: 1135px; }
+  header nav {
+    float: left;
+    margin: 2em 13em; }
+  header .btn {
+    float: left;
+    padding: 4em 2em;
+    margin: 1em 10em; } }
+
+@media (min-width: 1600px) {
+  header .hero {
+    margin: 15em auto; } }
+
 @media (min-width: 750px) and (max-width: 985px) {
   header .hero {
     margin: 0;
